@@ -1,15 +1,8 @@
 <template>
-    <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-    >
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <div class="container">
-            <div
-                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-            >
-                <a
-                    href="/"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
-                >
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
                     <svg class="bi me-2" width="40" height="32">
                         <use xlink:href="#bootstrap"></use>
                     </svg>
@@ -18,14 +11,10 @@
 
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <router-link to="/"
-                            ><a class="nav-link">Home</a></router-link
-                        >
+                        <router-link to="/"><a class="nav-link">Home</a></router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/about"
-                            ><a class="nav-link">About</a></router-link
-                        >
+                        <router-link to="/about"><a class="nav-link">About</a></router-link>
                     </li>
                 </ul>
             </div>

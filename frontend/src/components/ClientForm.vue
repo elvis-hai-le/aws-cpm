@@ -12,11 +12,11 @@
                     <label for="inputLName">Last Name</label>
                     <input type="text" class="form-control" id="inputLName">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <label for="inputPhone" class="form-label">Phone Number</label>
                     <input type="phone" class="form-control" id="inputPhone">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <label for="inputEmail" class="form-label">Email</label>
                     <input type="email" class="form-control" id="inputEmail">
                 </div>
@@ -34,9 +34,13 @@
                 <div class="col-12">
                     <h3 class="lead">Asset Information</h3>
                 </div>
+                <div class="col-12">
+                    <label for="aName" class="form-label">Asset Name (Holding)</label>
+                    <input type="text" placeholder="CBA.ASX" class="form-control" id="aName">
+                </div>
                 <div class="col-md-4">
-                    <label for="asset1" class="form-label">Asset Name (Holding)</label>
-                    <input type="text" placeholder="CBA.ASX" class="form-control" id="asset1">
+                    <label for="aQuantity" class="form-label">Units owned / Quantity</label>
+                    <input type="number" placeholder="148238" class="form-control" id="aQuantity">
                 </div>
                 <div class="col-md-4">
                     <label for="pPrice" class="form-label">$ Purchase Price</label>
@@ -47,8 +51,8 @@
                     <input type="number" placeholder="0.43" class="form-control" id="cPrice">
                 </div>
                 <div class="col-12">
-                    <label for="totalValue" class="form-label">Total Value</label>
-                    <p type="text" class="form-control" id="totalValue">$0.00</p>
+                    <label for="aTotal" class="form-label">Total Value</label>
+                    <p type="text" class="form-control" id="aTotal">$0.00</p>
                 </div>
                 <div class="col-12 form-submit">
                     <button type="submit" class="btn btn-primary">Submit</button>
