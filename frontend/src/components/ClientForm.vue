@@ -12,33 +12,24 @@
                     <label for="inputLName">Last Name</label>
                     <input type="text" class="form-control" id="inputLName">
                 </div>
-                <div class="col-md-6">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail">
-                </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <label for="inputPhone" class="form-label">Phone Number</label>
                     <input type="phone" class="form-control" id="inputPhone">
                 </div>
-                <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <div class="col-md-7">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <h3 class="lead">Bank Details</h3>
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
-                    <input type="text" class="form-control" id="inputState">
+                    <label for="inputBSB" class="form-label">BSB</label>
+                    <input type="text" class="form-control" id="inputBSB">
                 </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+                <div class="col-md-8">
+                    <label for="inputBank" class="form-label">Account Number</label>
+                    <input type="text" class="form-control" id="inputBank">
                 </div>
                 <div class="col-12">
                     <h3 class="lead">Asset Information</h3>
@@ -55,13 +46,12 @@
                     <label for="cPrice" class="form-label">$ Current Price</label>
                     <input type="number" placeholder="0.43" class="form-control" id="cPrice">
                 </div>
-                <div class="col-md-6">
+                <div class="col-12">
                     <label for="totalValue" class="form-label">Total Value</label>
                     <p type="text" class="form-control" id="totalValue">$0.00</p>
                 </div>
-                <div class="col-md-6">
-                    <label for="changeAsset" class="form-label">Change in Asset</label>
-                    <p type="text" class="form-control" id="changeAsset">$0.00</p>
+                <div class="col-12 form-submit">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
         </div>
