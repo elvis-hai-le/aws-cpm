@@ -22,7 +22,7 @@ const connection = mysql.createConnection({
 });
 
 //router
-const awscpmRouter = require("./routes/aws-db");
+const awscpmRouter = require("./routes/aws-db-routes");
 
 
 // Parse JSON request body
@@ -43,12 +43,6 @@ app.use((err, req, res, next) => {
   console.error(err.message, err.stack);
   res.status(statusCode).json({ message: err.message });
   return;
-});
-
-// Define a route for handling POST requests to the root endpoint
-app.post('/', (req, res) => {
-    const { name } = req.body;
-    res.send(`Hello, ${name}!`);
 });
 
 // open the MySQL connection

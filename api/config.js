@@ -6,6 +6,5 @@ const config = {
     password: "mitp2023",
     database: "AWS_CPM",
   },
-  listPerPage: 10,
 };
 module.exports = config;
