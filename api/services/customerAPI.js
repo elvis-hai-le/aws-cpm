@@ -19,8 +19,9 @@ async function createCustomer(customer){
     `INSERT INTO clientDetails 
     (customerID, lastName, firstName, phoneNumber, emailAddress, BSB_accountNumber)
     VALUES
-    ("${customer.customerID}", "${customer.lastName}", "${customer.firstName}", ${customer.phoneNumber}, "${customer.emailAddress}", "${customer.BSB_accountNumber}")`
+    (${customer.customerID}, ${customer.lastName}, ${customer.firstName}, ${customer.phoneNumber}, ${customer.emailAddress}, ${customer.BSB_accountNumber})`
   );
+  
 
   let message = 'Error in adding customer';
 

@@ -10,7 +10,7 @@ const mysql = require('mysql');
 
 // Create Express app
 const app = express();
-const PORT = 3306;
+const PORT = 3000;
 
 // Create a connection to the database
 const connection = mysql.createConnection({
@@ -35,9 +35,9 @@ app.use(
 
 // Define a route for handling GET requests to the root endpoint
 app.get('/', (req, res) => {
-    res.json({ message: "ok" });
+    res.json({ message: "Welcome to AWS-CPM API" });
 });
-app.use("/customer-details",awscpmRouter);
+app.use("/customer-details", awscpmRouter);
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
   console.error(err.message, err.stack);
