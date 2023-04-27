@@ -1,11 +1,18 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import AppView from '../views/AppView.vue'
+import SubmittedForm from '../views/SubmittedForm.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: AppView
+  },
+  {
+    path: '/submit',
+    name: 'submit',
+    component: SubmittedForm,
+    props: true
   },
   {
     path: '/about',
