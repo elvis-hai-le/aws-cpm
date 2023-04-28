@@ -16,6 +16,7 @@ router.get('/', async function(req, res, next) {
 router.post('/', async function(req, res, next) {
   try {
     //res.json(await customerAPI.createCustomer(req.body));
+    console.log(req.body);
     res.json(await customerAPI.createCustomer(req.body));
   } catch (err) {
     console.error(`Error while adding customer`, err.message);
