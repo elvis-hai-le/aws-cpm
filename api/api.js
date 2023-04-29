@@ -7,6 +7,7 @@
 // Import required modules
 const express = require('express');
 const mysql = require('mysql');
+const cors = require('cors');
 
 // Create Express app
 const app = express();
@@ -26,6 +27,7 @@ const awscpmRouter = require("./routes/aws-db-routes");
 
 
 // Parse JSON request body
+app.use(cors());
 app.use(express.json());
 app.use(
   express.urlencoded({

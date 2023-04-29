@@ -146,8 +146,20 @@ export default {
 
             // make sure its valid first
             if (!document.querySelector(":invalid")) {
-                console.log(data);
-                this.$router.push({ name: 'submit'});
+                const requestOptions = {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
+                    body: JSON.stringify(data)
+                };
+                fetch('http://localhost:3000/customer-details', requestOptions)
+                    .then(response => {
+                        console.log(response.json());
+                        if (response.ok) {
+                            this.$router.push({ name: 'submit' });
+                        } else {
+                            alert("Submission failed!");
+                        }
+                    });
             }
         }
     }

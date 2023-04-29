@@ -9,5 +9,5 @@ app.use('/', express.static(path.join(__dirname, './frontend/dist/')));
 
 // start the server
 app.listen(80, () => {
-    console.log('Server running on http://localhost:8080');
+    console.log('Server running on http://localhost/');
 });
